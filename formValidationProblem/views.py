@@ -21,7 +21,6 @@ class Index(View):
         @return: HttpResponse for the http request
         @rtype: HttpResponse
         """
-        print(type(request))
         form = IndexForm()
         return render(request, "index.html", {"form": form})
 
